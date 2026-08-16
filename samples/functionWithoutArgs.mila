@@ -1,0 +1,38 @@
+program factorial;
+
+function foo() : integer;
+var i : integer;
+begin
+    foo := 0;
+    i := 1;
+                while i
+
+
+                <
+                100 do
+
+
+    begin
+            foo
+
+        := i +                  foo;
+                        i := i  +1      ;
+        end
+end ;
+
+begin
+    writeln         (
+    foo
+    (
+    )
+    )
+    ;
+
+    writeln
+    (
+    foo    (
+
+
+
+    ));
+end.

@@ -1,0 +1,41 @@
+program sortBubble;
+
+var I, J, TMP, INDEX, TMP2, TMP3 : integer;
+var X : array [0 .. 20] of integer;
+
+begin
+  for I := 0 to 20 do begin
+    X[I] := 0;
+  end;
+
+  readln(TMP);
+
+  TMP := TMP - 1;
+
+  for I := 0 to TMP do begin
+    readln(TMP2);
+    X[I] := TMP2;
+  end;
+
+  for J := 0 to TMP do begin
+    I := J;
+    TMP2 := 0;
+    INDEX := 0;
+    while I <= TMP do
+    begin
+            if X[I] >= TMP2 then
+            begin
+                TMP2 := X[I];
+                INDEX := I;
+            end;
+            I := I + 1;
+    end;
+    TMP3 := X[INDEX];
+    X[INDEX] := X[J];
+    X[J] := TMP3;
+  end;
+
+  for I := 0 to TMP do begin
+    writeln(X[I]);
+  end
+end.

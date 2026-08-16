@@ -1,0 +1,21 @@
+program nestedvars;
+
+var
+    x: integer;
+
+begin
+    x := 5;
+
+    if x > 0 then
+    begin
+        writeln(x);
+    end;
+
+    begin
+        begin
+            writeln(x);
+        end;
+    end;
+
+    writeln(x);
+end.

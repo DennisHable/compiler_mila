@@ -1,0 +1,13 @@
+program miniarraytest;
+
+var
+    i: integer;
+    a: array[-2..2] of integer;
+
+begin
+    for i := -2 to 2 do
+        a[i] := i * i;
+
+    for i := -2 to 2 do
+        writeln(a[i]);
+end.
